@@ -1,0 +1,195 @@
+/* ==========================================
+   1. RESET Y ESTILOS GENERALES
+   ================================---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333333;
+  line-height: 1.6;
+  padding: 40px 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   2. ENLACES Y NAVEGACIÓN
+   ================================---------- */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* ==========================================
+   3. TIPOGRAFÍA Y ENCABEZADOS
+   ================================---------- */
+h1 {
+  font-size: 1.85rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: #334155;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #475569;
+}
+
+/* ==========================================
+   4. LISTAS (Menú Principal / Index)
+   ================================---------- */
+ul {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px 24px 24px 40px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  list-style-type: disc;
+  margin-top: 15px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+li a {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* ==========================================
+   5. FORMULARIOS Y CONTROLES
+   ================================---------- */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #1e293b;
+  margin-top: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #334155;
+  background-color: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Campos de solo lectura (resultados) */
+input[readonly] {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+}
+
+/* Botones de acción */
+button {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #1e293b;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* ==========================================
+   6. TABLAS (Ejercicio de Presupuesto)
+   ================================---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: #1e293b;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+td:last-child {
+  font-weight: 600;
+  color: #0f172a;
+}
