@@ -1,5 +1,4 @@
 function calcularPresupuesto() {
-    // 1. Acceder a los inputs recorriendo el DOM del formulario
     const form = document.querySelector('form');
     const inputs = form.querySelectorAll('input');
 
